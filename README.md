@@ -11,26 +11,26 @@ or downloads them from the repo if rTorrent is 0.9.6,
 and runs on apache2 web server.
 
 ## Systems
-### Working and tested
-* Ubuntu 16.04 64-bit
-* Ubuntu 16.04 32-bit
-* Debian Jessie 64-bit
-* Debian Jessie 32-bit
-* Debian Stretch 64-bit
-* Debian Stretch 32-bit
-* Devuan Jessie 64-bit
-* Devuan Jessie 32-bit
-* Devuan ASCII 64-bit
-* Devuan ASCII 32-bit
-* Raspbian Jessie
-* Raspbian Stretch
-* Armbian Xenial
-* Armbian Jessie
-* Armbian Stretch
+Operating System | State
+--- | ---
+Ubuntu 16.04 64-bit | :heavy_check_mark:
+Ubuntu 16.04 32-bit | :heavy_check_mark:
+Debian Jessie 64-bit | :heavy_check_mark:
+Debian Jessie 32-bit | :heavy_check_mark:
+Debian Stretch 64-bit | :heavy_check_mark:
+Debian Stretch 32-bit | :heavy_check_mark:
+Devuan Jessie 64-bit | :heavy_check_mark:
+Devuan Jessie 32-bit | :heavy_check_mark:
+Devuan ASCII 64-bit | :heavy_check_mark:
+Devuan ASCII 32-bit | :heavy_check_mark:
+Raspbian Jessie | :heavy_check_mark:
+Raspbian Stretch | :heavy_check_mark:
+Armbian Xenial | :heavy_check_mark:
+Armbian Jessie | :heavy_check_mark:
+Armbian Stretch | :heavy_check_mark:
+Ubuntu 14.04 64-bit | :x:
+Ubuntu 14.04 32-bit | :x:
 
-## Not working (yet)
-* Ubuntu 14.04 64-bit
-* Ubuntu 14.04 32-bit
 
 ## Dependecies
 This script installer is made in Lua,
@@ -54,35 +54,6 @@ or just copy the monster line in to your terminal:
 ```
 sudo apt-get update && sudo apt-get install -y lua5.2 git sox && git clone https://github.com/LarsHLunde/RuTorrent-Installer.git && cd RuTorrent-Installer && lua installer.lua
 ```
-
-## Changelog
-### Version 1
-Initial working release
-### Version 1.01
-* Fixed ownership of rtorrent.rc file
-* Re-added seedtime in config
-
-### Version 1.1
-* Made compatible with Ubuntu 16.04
-* Lost comaptibility for Ubuntu 14.04
-
-### Version 1.2
-* Added support for repo installation
-
-### Version 1.3
-* Added a support script for the liteserver.nl VPSs
-* Added support for Debian stretch
-* Cleaned up a lot of dirty hacks
-* Made it self destruct upon completion
-
-## Planned features
-
-
-* Make dialog screens, which I need to learn how to use
-* Make script safe to run multiple times without side effects
-* Add support for nginx
-* Maybe add support for lighttpd
-* Add support for using the reposetory versions of xml-rpc, rtorrent and libtorrent
 
 ## Notes
 I have made the not about the Debian and Devuan on which I test
@@ -115,5 +86,20 @@ It should ask for your password and return nothing
 sudo -v
 ```
 
-
 You can repeat this proccess if needed
+
+## Planned features
+
+* Make dialog screens, which I need to learn how to use
+* Make script safe to run multiple times without side effects
+* Add support for nginx
+* Add support for lighttpd
+
+## Changelog
+Description | Version | State
+--- | --- | ---
+Added a support script for the liteserver.nl VPSs<br>Added support for Debian stretch<br>Cleaned up some hacks<br>Made script clean itself up| v1.3 | release
+Added support for repo installation | v1.2 | release
+Made compatible with Ubuntu 16.04<br>Lost comaptibility for Ubuntu 14.04 | v1.1 | release
+Fixed ownership of rtorrent.rc file <br>Re-added seedtime in config | v1.0.1 | beta
+Initial working release | v1.0 | beta
