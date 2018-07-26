@@ -1,4 +1,4 @@
-# RuTorrent-Installer v1.3
+# RuTorrent-Installer v1.3.1
 
 ## Description
 This is a RuTorrent installer for debian based linux systems.
@@ -98,6 +98,7 @@ You can repeat this proccess if needed
 ## Changelog
 Description | Version | State
 --- | --- | ---
+Changed low disk space limit for 10GB to 100MB in .rtorrent.rc | v1.3.1 | release
 Added a support script for the liteserver.nl VPSs<br>Added support for Debian stretch<br>Cleaned up some hacks<br>Made script clean itself up| v1.3 | release
 Added support for repo installation | v1.2 | release
 Made compatible with Ubuntu 16.04<br>Lost comaptibility for Ubuntu 14.04 | v1.1 | release
