@@ -45,14 +45,14 @@ to your console.
 ```
 sudo apt-get update
 sudo apt-get install -y lua5.2 git sox
-git clone https://github.com/LarsHLunde/RuTorrent-Installer.git
+git clone https://github.com/SenorPyro/RuTorrent-Installer.git
 cd RuTorrent-Installer
 lua installer.lua
 ```
 
 or just copy the monster line in to your terminal:
 ```
-sudo apt-get update && sudo apt-get install -y lua5.2 git sox && git clone https://github.com/LarsHLunde/RuTorrent-Installer.git && cd RuTorrent-Installer && lua installer.lua
+sudo apt-get update && sudo apt-get install -y lua5.2 git sox && git clone https://github.com/SenorPyro/RuTorrent-Installer.git && cd RuTorrent-Installer && lua installer.lua
 ```
 
 ## Notes
