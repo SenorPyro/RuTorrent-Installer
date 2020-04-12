@@ -1,4 +1,4 @@
-# RuTorrent-Installer v1.3.1
+# RuTorrent-Installer v1.3.2
 
 ## Description
 This is a RuTorrent installer for debian based linux systems.
@@ -13,24 +13,24 @@ and runs on apache2 web server.
 ## Systems
 Operating System | State
 --- | ---
-Ubuntu 16.04 64-bit | :heavy_check_mark:
-Ubuntu 16.04 32-bit | :heavy_check_mark:
-Debian Jessie 64-bit | :heavy_check_mark:
-Debian Jessie 32-bit | :heavy_check_mark:
-Debian Stretch 64-bit | :heavy_check_mark:
-Debian Stretch 32-bit | :heavy_check_mark:
-Devuan Jessie 64-bit | :heavy_check_mark:
-Devuan Jessie 32-bit | :heavy_check_mark:
-Devuan ASCII 64-bit | :heavy_check_mark:
-Devuan ASCII 32-bit | :heavy_check_mark:
-Raspbian Jessie | :heavy_check_mark:
+Ubuntu 18.04 | :heavy_check_mark:
+Debian Buster | :x: <sup>1</sup>
+Raspbian Buster | :x: <sup>1</sup>
+Armbian Buster | :x: <sup>1</sup>
+Ubuntu 16.10 - 17.10 | :question: <sup>2</sup>
+Ubuntu 16.04 | :heavy_check_mark:
+Debian Jessie | :heavy_check_mark:
+Debian Stretch | :heavy_check_mark:
+Devuan Jessie | :heavy_check_mark:
+Devuan ASCII | :heavy_check_mark:
 Raspbian Stretch | :heavy_check_mark:
+Raspbian Jessie | :heavy_check_mark:
 Armbian Xenial | :heavy_check_mark:
-Armbian Jessie | :heavy_check_mark:
 Armbian Stretch | :heavy_check_mark:
-Ubuntu 14.04 64-bit | :x:
-Ubuntu 14.04 32-bit | :x:
+Armbian Jessie | :heavy_check_mark:
 
+1. I am in the testing phase of making script specific to Buster
+2. In theory it should work on these systems, I have no intention of testing them
 
 ## Dependecies
 This script installer is made in Lua,
@@ -88,16 +88,10 @@ sudo -v
 
 You can repeat this proccess if needed
 
-## Planned features
-
-* Make dialog screens, which I need to learn how to use
-* Make script safe to run multiple times without side effects
-* Add support for nginx
-* Add support for lighttpd
-
 ## Changelog
 Description | Version | State
 --- | --- | ---
+Changed command files to work with Ubuntu 18.04 | v1.3.2 | release
 Changed low disk space limit for 10GB to 100MB in .rtorrent.rc | v1.3.1 | release
 Added a support script for the liteserver.nl VPSs<br>Added support for Debian stretch<br>Cleaned up some hacks<br>Made script clean itself up| v1.3 | release
 Added support for repo installation | v1.2 | release
